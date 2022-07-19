@@ -153,14 +153,14 @@ class MySaveFileThread(threading.Thread):
                         progress_checked_files = int(match_checked_files.group(1))
                         progress_total_check_files = int(match_checked_files.group(2))
                     progress_max_percentage_10 = max(progress_size_percentage_10, progress_file_percentage_10)
-                    message_progress = '├──────⌈ Made with Love by Dr.Caduceus & MsGsuite⌋──────' \
+                    message_progress = '├──────⌈ Made with ⚡NXD⚡ ⌋──────' \
                                        '├ 🗂 Source : <a href="https://drive.google.com/open?id={}">{}</a>\n│\n' \
                                        '├ ✔️ Checks： <code>{} / {}</code>\n' \
                                        '├ 📥 Transfers： <code>{} / {}</code>\n' \
                                        '├ 📦 Size：<code>{} / {}</code>\n{}' \
                                        '├ ⚡️Speed：<code>{}</code> \n├⏳ ETA: <code>{}</code>\n' \
                                        '├ ⛩ Progress：[<code>{}</code>] {: >2}%\n│\n' \
-                                       '├──────⌈ CloneBot V2🔥 ⌋──────' \
+                                       '├──────⌈ 🔥CloneBot🔥 ⌋──────' \
                         .format(
                         folder_id,
                         html.escape(destination_path),
@@ -238,7 +238,7 @@ class MySaveFileThread(threading.Thread):
             try:
                 link = gd.get_folder_link(dest_folder['folder_id'], destination_path)
                 if link:
-                    link_text = '\n│ \n│      👉 <a href="{}">Google Drive Link</a> 👈'.format(link)
+                    link_text = '\n│ \n│      👉 <a href="{}">Drive Link</a> 👈'.format(link)
             except Exception as e:
                 logger.info(str(e))
 
